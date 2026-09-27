@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at the [New Jersey Institute of Technology](https://www.njit.edu/) (NJIT), advised by Prof. [Chenxi Yuan](https://chenxiyuan1.github.io/). My research focuses on trustworthy AI, especially uncertainty quantification and how it can make AI systems more reliable, as well as AI for healthcare.
+I am a second-year Ph.D. student at the [New Jersey Institute of Technology](https://www.njit.edu/) (NJIT), advised by Prof. [Chenxi Yuan](https://chenxiyuan1.github.io/). My research focuses on trustworthy AI, especially uncertainty quantification and how it can make AI systems more reliable, as well as AI for healthcare.
 
 Before NJIT, I received my M.S.E. in Electrical Engineering from the University of Pennsylvania and my B.E. in Software Engineering from Sichuan University.
 
@@ -23,6 +23,6 @@ Before NJIT, I received my M.S.E. in Electrical Engineering from the University 
 
 ## Education
 
-- **Ph.D.**, New Jersey Institute of Technology
-- **M.S.E. in Electrical Engineering**, University of Pennsylvania
-- **B.E. in Software Engineering**, Sichuan University
+- **Ph.D.**, New Jersey Institute of Technology, 2025 – Present
+- **M.S.E. in Electrical Engineering**, University of Pennsylvania, 2023 – 2025
+- **B.E. in Software Engineering**, Sichuan University, 2019 – 2023
