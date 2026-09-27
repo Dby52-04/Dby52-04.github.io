@@ -1,0 +1,18 @@
+# 每篇论文一个条目，新论文加在最上面。
+# 可用字段：title, authors, conference_short, conference, pdf, code, page, notes, others（如以后想加缩略图，可加 image 字段）
+main:
+
+  - title: "UMAS: System-Level Uncertainty Quantification for Multi-Agent LLM Systems"
+    authors: <strong>Hanwen Li</strong>, Jinhao Duan, Xiaoshuang Shi, Yue Zhang, Tianlong Chen, Kaidi Xu, Chenxi Yuan
+    conference_short: NeurIPS
+    conference: Advances in Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2026.
+    # pdf: https://arxiv.org/pdf/XXXX.XXXXX   # TODO: 有 arXiv / OpenReview 链接后填上
+    # code: https://github.com/...           # TODO: 代码开源后填上
+
+  - title: "SURE: Data-Efficient Safety Guardrailing via Internal Representations and Uncertainty-Weighted Pseudo-Labels"
+    authors: <strong>Hanwen Li</strong>, Jinhao Duan, Chenxi Yuan, James Diffenderfer, Sandeep Madireddy, Bhavya Kailkhura, Kaidi Xu
+    conference_short: npj AI
+    conference: <strong>npj Artificial Intelligence</strong>, 2026.
+    pdf: https://www.nature.com/articles/s44387-026-00141-y.pdf
+    page: https://www.nature.com/articles/s44387-026-00141-y
+    others: <a href="https://doi.org/10.1038/s44387-026-00141-y" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">DOI</a>

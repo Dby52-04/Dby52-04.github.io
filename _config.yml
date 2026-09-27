@@ -1,0 +1,55 @@
+# Basic Information
+title: Hanwen Li
+position: Ph.D. Student
+affiliation: New Jersey Institute of Technology
+affiliation_link: https://www.njit.edu/
+email: hl544 (at) njit.edu
+
+# Search Engine Optimization (SEO)
+keywords: Hanwen Li, NJIT, trustworthy AI, uncertainty quantification, AI for healthcare, large language models
+description: Hanwen Li is a Ph.D. student at the New Jersey Institute of Technology working on trustworthy AI, uncertainty quantification, and AI for healthcare.
+canonical: https://dby52-04.github.io/
+
+# Links
+# 不需要的链接可以直接删除对应行
+google_scholar: https://scholar.google.com/citations?user=NdrqnaUAAAAJ&hl=en
+github_link: https://github.com/Dby52-04
+# cv_link: assets/files/cv.pdf                # TODO: 把 CV 放到 assets/files/cv.pdf 后取消注释
+
+# Images
+avatar: ./assets/img/avatar.png
+favicon: ./assets/img/favicon.png
+favicon_dark: ./assets/img/favicon-dark.png
+
+# Analytics（访问统计，默认不启用；需要时去掉行首的 # 并填写）
+goatcounter: hanwenli            # 后台：https://hanwenli.goatcounter.com
+# google_analytics: G-XXXXXXXXXX   # Google Analytics 4 的衡量 ID
+
+# Footnote: "Powered by Jekyll and Minimal Light theme."
+enable_footnote: true
+
+# Auto Dark Mode
+auto_dark_mode: false
+
+# Font: "Serif" or "Sans Serif"
+font: "Serif"
+
+# Use this project as a remote theme for GitHub Pages
+remote_theme: yaoyao-liu/minimal-light
+
+# Plugins (both are supported by GitHub Pages)
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap   # 自动生成 sitemap.xml，方便 Google 收录
+
+# The following files will be removed from the generated website.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - README_zh_Hans.md
+  - README_zh_Hant.md
+  - README_de.md
+  - LICENSE
+  - minimal-light.gemspec
+  - 使用说明.md
