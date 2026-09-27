@@ -53,3 +53,10 @@ exclude:
   - LICENSE
   - minimal-light.gemspec
   - 使用说明.md
+
+# 主题自带的示例 PDF（assets/files/curriculum_vitae.pdf）不要出现在 sitemap 里
+defaults:
+  - scope:
+      path: "assets/files/curriculum_vitae.pdf"
+    values:
+      sitemap: false
