@@ -7,7 +7,7 @@
   height:2.4rem;
   width:2.4rem;
   background-color:transparent;
-  color:#043361!important;
+  color:#1f1f1f!important;
   border-radius:100%;
   text-align:center;
   font-size:1.15rem;
@@ -116,7 +116,7 @@ email {
 .icon-button:hover .icon-twitter,.icon-button:hover .icon-facebook,.icon-button:hover .icon-github,.icon-button:hover .icon-linkedin{color:white}
 
 autocolor{
-  color:#595959;
+  color:#555555;
 }
 
 lightonly {
@@ -183,18 +183,18 @@ papertitle {
 
 h3, h4, h5, h6 {
   font-weight: 600;
-  color:#043361;
+  color:#1f1f1f;
   margin:0 0 20px;
 }
 
 h1 {
   font-weight: 500;
-  color:#043361;
+  color:#1f1f1f;
   margin:0 0 20px;
 }
 
 h2 {
-  color:#043361;
+  color:#1f1f1f;
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
@@ -213,12 +213,12 @@ h1 {
 }
 
 a {
-  color:#39c;
+  color:#c2410c;
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:#9a3412;
 }
 
 a small {
@@ -337,7 +337,7 @@ header ul a:active {
 }
 
 strong {
-  color:#222;
+  color:#111111;
   font-weight:500;
 }
 
@@ -349,7 +349,7 @@ header ul li + li + li {
 header ul a strong {
   font-size:14px;
   display:block;
-  color:#222;
+  color:#111111;
 }
 
 section {
