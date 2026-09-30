@@ -14,6 +14,16 @@ canonical: https://dby52-04.github.io/
 # 不需要的链接可以直接删除对应行
 google_scholar: https://scholar.google.com/citations?user=NdrqnaUAAAAJ&hl=en
 github_link: https://github.com/Dby52-04
+email_link: mailto:hl544@njit.edu
+
+# Structured data（给搜索引擎看的个人信息，不显示在页面上）
+alumni_of:
+  - University of Pennsylvania
+  - Sichuan University
+research_topics:
+  - Trustworthy AI
+  - Uncertainty Quantification
+  - AI for Healthcare
 # cv_link: assets/files/cv.pdf                # TODO: 把 CV 放到 assets/files/cv.pdf 后取消注释
 
 # Images
@@ -26,7 +36,7 @@ goatcounter: hanwenli            # 后台：https://hanwenli.goatcounter.com
 # google_analytics: G-XXXXXXXXXX   # Google Analytics 4 的衡量 ID
 
 # Footnote: "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
+enable_footnote: false
 
 # Auto Dark Mode
 auto_dark_mode: false
@@ -58,5 +68,10 @@ exclude:
 defaults:
   - scope:
       path: "assets/files/curriculum_vitae.pdf"
+    values:
+      sitemap: false
+  # Google Search Console 验证文件：要一直保留，但不用进 sitemap
+  - scope:
+      path: "googlede80957ac3ccca32.html"
     values:
       sitemap: false

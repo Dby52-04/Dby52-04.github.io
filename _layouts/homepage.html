@@ -14,6 +14,34 @@
     <link rel="canonical" href="{{ site.canonical }}"/>
     {% endif %}
 
+    {% if site.canonical %}
+    <!-- Link preview card (Slack, X/Twitter, LinkedIn, iMessage, ...) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="{{ site.title }} | {{ site.affiliation }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:url" content="{{ site.canonical }}">
+    <meta property="og:image" content="{{ site.canonical }}{{ site.avatar | remove_first: './' }}">
+    <meta property="og:image:alt" content="{{ site.title }}">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Structured data: tells search engines who this page is about -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.canonical | jsonify }},
+      "image": {{ site.canonical | append: site.avatar | replace: '/./', '/' | jsonify }},
+      "jobTitle": {{ site.position | jsonify }},
+      "affiliation": { "@type": "CollegeOrUniversity", "name": {{ site.affiliation | jsonify }}, "url": {{ site.affiliation_link | jsonify }} },
+      {% if site.alumni_of %}"alumniOf": [{% for school in site.alumni_of %}{ "@type": "CollegeOrUniversity", "name": {{ school | jsonify }} }{% unless forloop.last %}, {% endunless %}{% endfor %}],{% endif %}
+      {% if site.research_topics %}"knowsAbout": {{ site.research_topics | jsonify }},{% endif %}
+      {% if site.email_link %}"email": {{ site.email_link | jsonify }},{% endif %}
+      "sameAs": [{% assign profiles = "" | split: "" %}{% if site.google_scholar %}{% assign profiles = profiles | push: site.google_scholar %}{% endif %}{% if site.github_link %}{% assign profiles = profiles | push: site.github_link %}{% endif %}{% if site.linkedin %}{% assign profiles = profiles | push: site.linkedin %}{% endif %}{% if site.twitter %}{% assign profiles = profiles | push: site.twitter %}{% endif %}{% for p in profiles %}{{ p | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+    }
+    </script>
+    {% endif %}
+
     <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
@@ -75,6 +103,12 @@
         {% if site.github_link %}
         <a style="margin: 0 5px 0 0" href="{{ site.github_link }}">
           <i class="fab fa-github"></i>
+        </a>
+        {% endif %}
+
+        {% if site.email_link %}
+        <a style="margin: 0 5px 0 0" href="{{ site.email_link }}" aria-label="Email">
+          <i class="fas fa-envelope"></i>
         </a>
         {% endif %}
 
