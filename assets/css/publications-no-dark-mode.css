@@ -48,7 +48,9 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li .abbr .award { color: var(--global-theme-color) !important; border: 1px solid var(--global-theme-color); }
 
-.publications ol.bibliography li .title { font-weight: bolder; }
+.publications ol.bibliography li .title { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 0.92em; color: #111111; line-height: 1.4; margin-bottom: 4px; }
+.publications ol.bibliography li .title a { color: inherit; }
+.publications ol.bibliography li .title a:hover { color: #c2410c; }
 
 .publications ol.bibliography li .author a { border-bottom: 1px var(--global-theme-color); }
 

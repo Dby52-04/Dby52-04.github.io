@@ -116,7 +116,7 @@ email {
 .icon-button:hover .icon-twitter,.icon-button:hover .icon-facebook,.icon-button:hover .icon-github,.icon-button:hover .icon-linkedin{color:white}
 
 autocolor{
-  color:#555555;
+  color:#666666;
 }
 
 lightonly {
@@ -188,16 +188,18 @@ h3, h4, h5, h6 {
 }
 
 h1 {
-  font-weight: 500;
-  color:#1f1f1f;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color:#111111;
   margin:0 0 20px;
 }
 
 h2 {
-  color:#1f1f1f;
-  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  color:#111111;
+  font-weight: 700;
   margin:2px 0px 15px;
-  font-size: 157%;
+  font-size: 160%;
 }
 
 p, ul, ol, table, pre, dl {
