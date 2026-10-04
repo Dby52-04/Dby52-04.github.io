@@ -44,22 +44,25 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
   <body>
-    <div class="page">
-      <header>
-        <h1>{{ site.title }}</h1>
-        <p class="role">{{ site.position }}<br>{{ site.affiliation }}</p>
-        <nav class="links" aria-label="Profiles and contact">
-          {% if site.google_scholar %}<a href="{{ site.google_scholar }}">Google Scholar</a>{% endif %}
-          {% if site.github_link %}<a href="{{ site.github_link }}">GitHub</a>{% endif %}
-          {% if site.linkedin %}<a href="{{ site.linkedin }}">LinkedIn</a>{% endif %}
-          {% if site.twitter %}<a href="{{ site.twitter }}">X</a>{% endif %}
-          {% if site.cv_link %}<a href="{{ site.cv_link | relative_url }}">CV</a>{% endif %}
-          {% if site.email_link %}<a href="{{ site.email_link }}">{{ site.email_link | remove_first: 'mailto:' }}</a>{% endif %}
-        </nav>
+    <div class="wrap">
+      <header class="top">
+        <div class="intro">
+          <h1 class="name">{{ site.title }}</h1>
+          {% capture bio %}{% include about.md %}{% endcapture %}{{ bio | markdownify }}
+          {%- assign contact = "" | split: "" %}
+          {%- if site.email_link %}{% capture item %}<a href="{{ site.email_link }}">Email</a>{% endcapture %}{% assign contact = contact | push: item %}{% endif %}
+          {%- if site.google_scholar %}{% capture item %}<a href="{{ site.google_scholar }}">Google Scholar</a>{% endcapture %}{% assign contact = contact | push: item %}{% endif %}
+          {%- if site.github_link %}{% capture item %}<a href="{{ site.github_link }}">GitHub</a>{% endcapture %}{% assign contact = contact | push: item %}{% endif %}
+          {%- if site.linkedin %}{% capture item %}<a href="{{ site.linkedin }}">LinkedIn</a>{% endcapture %}{% assign contact = contact | push: item %}{% endif %}
+          {%- if site.twitter %}{% capture item %}<a href="{{ site.twitter }}">X</a>{% endcapture %}{% assign contact = contact | push: item %}{% endif %}
+          {%- if site.cv_link %}{% capture item %}<a href="{{ site.cv_link }}">CV</a>{% endcapture %}{% assign contact = contact | push: item %}{% endif %}
+          <p class="contact">{{ contact | join: " &nbsp;/&nbsp; " }}</p>
+        </div>
+        {% if site.avatar %}<div class="photo"><img src="{{ site.avatar }}" alt="{{ site.title }}"></div>{% endif %}
       </header>
 
       <main>

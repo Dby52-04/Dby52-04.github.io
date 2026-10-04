@@ -1,5 +1,5 @@
-<ul class="news">
+<table class="news">
 {%- for item in site.data.news %}
-<li><span class="when">{{ item.date }}</span><span>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+<tr><td class="when">[{{ item.date }}]</td><td>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</td></tr>
 {%- endfor %}
-</ul>
+</table>

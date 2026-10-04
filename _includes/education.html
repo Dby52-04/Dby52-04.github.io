@@ -1,5 +1,5 @@
 <ul class="edu">
 {%- for item in site.data.education %}
-<li><span><strong>{{ item.degree }}</strong>, {{ item.school }}</span><span class="when">{{ item.years }}</span></li>
+<li><strong>{{ item.degree }}</strong>, {{ item.school }}, {{ item.years }}</li>
 {%- endfor %}
 </ul>
