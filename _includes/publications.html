@@ -1,0 +1,18 @@
+<ul class="pubs">
+{%- for pub in site.data.publications.main %}
+<li>
+  <div class="pub-title">{% if pub.pdf %}<a href="{{ pub.pdf }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</div>
+  <div class="pub-authors">{{ pub.authors }}</div>
+  <div class="pub-venue">{{ pub.venue }}{% if pub.notes %} <span class="pub-note">{{ pub.notes }}</span>{% endif %}</div>
+  {%- if pub.pdf or pub.code or pub.page or pub.bibtex or pub.doi %}
+  <div class="pub-links">
+    {%- if pub.pdf %}<a href="{{ pub.pdf }}">PDF</a>{% endif %}
+    {%- if pub.code %}<a href="{{ pub.code }}">Code</a>{% endif %}
+    {%- if pub.page %}<a href="{{ pub.page }}">Paper page</a>{% endif %}
+    {%- if pub.bibtex %}<a href="{{ pub.bibtex }}">BibTeX</a>{% endif %}
+    {%- if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">DOI</a>{% endif %}
+  </div>
+  {%- endif %}
+</li>
+{%- endfor %}
+</ul>

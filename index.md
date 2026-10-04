@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-## About Me
+## About me
 
 I am a second-year Ph.D. student at the [New Jersey Institute of Technology](https://www.njit.edu/) (NJIT), advised by Prof. [Chenxi Yuan](https://chenxiyuan1.github.io/). My research focuses on trustworthy AI, especially uncertainty quantification and how it can make AI systems more reliable, as well as AI for healthcare.
 
@@ -14,13 +14,12 @@ I am very excited about potential collaboration opportunities! If you share simi
 
 ## News
 
-- **[Sep. 2026]** Our paper UMAS is accepted to NeurIPS 2026.
-- **[Jul. 2026]** Our paper SURE is published in npj Artificial Intelligence.
+{% include news.html %}
 
-{% include_relative _includes/publications.md %}
+## Publications
+
+{% include publications.html %}
 
 ## Education
 
-- **Ph.D.**, New Jersey Institute of Technology, 2025 – Present
-- **M.S.E. in Electrical Engineering**, University of Pennsylvania, 2023 – 2025
-- **B.E. in Software Engineering**, Sichuan University, 2019 – 2023
+{% include education.html %}

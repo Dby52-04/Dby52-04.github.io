@@ -1,9 +1,8 @@
 # Basic Information
 title: Hanwen Li
-position: Ph.D. Student
+position: Ph.D. student
 affiliation: New Jersey Institute of Technology
 affiliation_link: https://www.njit.edu/
-email: hl544 (at) njit.edu
 
 # Search Engine Optimization (SEO)
 keywords: Hanwen Li, NJIT, trustworthy AI, uncertainty quantification, AI for healthcare, large language models
@@ -35,21 +34,8 @@ favicon_dark: ./assets/img/favicon-dark.png
 goatcounter: hanwenli            # 后台：https://hanwenli.goatcounter.com
 # google_analytics: G-XXXXXXXXXX   # Google Analytics 4 的衡量 ID
 
-# Footnote: "Powered by Jekyll and Minimal Light theme."
-enable_footnote: false
-
-# Auto Dark Mode
-auto_dark_mode: false
-
-# Font: "Serif" or "Sans Serif"
-font: "Serif"
-
-# Use this project as a remote theme for GitHub Pages
-remote_theme: yaoyao-liu/minimal-light
-
-# Plugins (both are supported by GitHub Pages)
+# Plugins (supported by GitHub Pages)
 plugins:
-  - jekyll-remote-theme
   - jekyll-sitemap   # 自动生成 sitemap.xml，方便 Google 收录
 
 # The following files will be removed from the generated website.
@@ -64,12 +50,7 @@ exclude:
   - minimal-light.gemspec
   - 使用说明.md
 
-# 主题自带的示例 PDF（assets/files/curriculum_vitae.pdf）不要出现在 sitemap 里
 defaults:
-  - scope:
-      path: "assets/files/curriculum_vitae.pdf"
-    values:
-      sitemap: false
   # Google Search Console 验证文件：要一直保留，但不用进 sitemap
   - scope:
       path: "googlede80957ac3ccca32.html"

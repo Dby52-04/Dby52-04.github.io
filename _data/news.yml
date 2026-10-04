@@ -1,0 +1,6 @@
+# 新闻，新的加在最上面。text 里可以用 Markdown，比如 [链接文字](https://...)
+- date: Sep 2026
+  text: Our paper UMAS is accepted to NeurIPS 2026.
+
+- date: Jul 2026
+  text: Our paper SURE is published in npj Artificial Intelligence.
