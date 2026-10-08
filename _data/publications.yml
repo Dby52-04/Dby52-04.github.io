@@ -1,6 +1,6 @@
-# 每篇论文一个条目，新论文加在最上面。
+# 每篇论文一个条目。已发表的论文按时间新的在上；预印本（arXiv preprint）统一放在最后。
 # 必填：title, authors, venue
-# 可选链接（有就显示，没有就不显示）：pdf, code, page, bibtex, doi（只填 10.xxxx/... 这一段）
+# 可选链接（有就显示，没有就不显示）：pdf, arxiv（摘要页）, code, page, bibtex, doi（只填 10.xxxx/... 这一段）
 # 可选：notes（显示在会议名后面，比如 Oral、Spotlight）
 main:
 
@@ -8,11 +8,18 @@ main:
     authors: <strong>Hanwen Li</strong>, Jinhao Duan, Xiaoshuang Shi, Yue Zhang, Tianlong Chen, Kaidi Xu, Chenxi Yuan
     venue: Advances in Neural Information Processing Systems (NeurIPS), 2026
     # pdf: https://arxiv.org/pdf/XXXX.XXXXX   # TODO: 有 arXiv / OpenReview 链接后填上
-    # code: https://github.com/...           # TODO: 代码开源后填上
+    code: https://github.com/Dby52-04/UMAS
 
   - title: "SURE: Data-Efficient Safety Guardrailing via Internal Representations and Uncertainty-Weighted Pseudo-Labels"
     authors: <strong>Hanwen Li</strong>, Jinhao Duan, Chenxi Yuan, James Diffenderfer, Sandeep Madireddy, Bhavya Kailkhura, Kaidi Xu
     venue: npj Artificial Intelligence, 2026
     pdf: https://www.nature.com/articles/s44387-026-00141-y.pdf
     page: https://www.nature.com/articles/s44387-026-00141-y
+    code: https://github.com/Dby52-04/SURE
     doi: 10.1038/s44387-026-00141-y
+
+  - title: "From Uncertainty to Action: Learning to Steer LLM Agents"
+    authors: <strong>Hanwen Li</strong>, Jinhao Duan, Guanhua Zhu, Junchi Lu, Bo Shen, Chenxi Yuan, Kaidi Xu
+    venue: arXiv preprint arXiv:2610.09115, 2026
+    pdf: https://arxiv.org/pdf/2610.09115
+    arxiv: https://arxiv.org/abs/2610.09115

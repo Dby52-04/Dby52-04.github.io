@@ -2,6 +2,7 @@
 {%- for pub in site.data.publications.main %}
 {%- assign links = "" | split: "" %}
 {%- if pub.pdf %}{% capture l %}<a href="{{ pub.pdf }}">PDF</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
+{%- if pub.arxiv %}{% capture l %}<a href="{{ pub.arxiv }}">arXiv</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
 {%- if pub.code %}{% capture l %}<a href="{{ pub.code }}">Code</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
 {%- if pub.page %}{% capture l %}<a href="{{ pub.page }}">Paper page</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
 {%- if pub.bibtex %}{% capture l %}<a href="{{ pub.bibtex }}">BibTeX</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
