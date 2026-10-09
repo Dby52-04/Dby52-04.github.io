@@ -1,13 +1,14 @@
 # 每篇论文一个条目。已发表的论文按时间新的在上；预印本（arXiv preprint）统一放在最后。
 # 必填：title, authors, venue
 # 可选链接（有就显示，没有就不显示）：pdf, arxiv（摘要页）, code, page, bibtex, doi（只填 10.xxxx/... 这一段）
+# 本地 PDF：放进 assets/files/，pdf 填 /assets/files/文件名.pdf
 # 可选：notes（显示在会议名后面，比如 Oral、Spotlight）
 main:
 
   - title: "UMAS: System-Level Uncertainty Quantification for Multi-Agent LLM Systems"
     authors: <strong>Hanwen Li</strong>, Jinhao Duan, Xiaoshuang Shi, Yue Zhang, Tianlong Chen, Kaidi Xu, Chenxi Yuan
     venue: Advances in Neural Information Processing Systems (NeurIPS), 2026
-    # pdf: https://arxiv.org/pdf/XXXX.XXXXX   # TODO: 有 arXiv / OpenReview 链接后填上
+    pdf: /assets/files/UMAS_NeurIPS2026.pdf
     code: https://github.com/Dby52-04/UMAS
 
   - title: "SURE: Data-Efficient Safety Guardrailing via Internal Representations and Uncertainty-Weighted Pseudo-Labels"
