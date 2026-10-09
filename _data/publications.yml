@@ -15,9 +15,7 @@ main:
     authors: <strong>Hanwen Li</strong>, Jinhao Duan, Chenxi Yuan, James Diffenderfer, Sandeep Madireddy, Bhavya Kailkhura, Kaidi Xu
     venue: npj Artificial Intelligence, 2026
     pdf: https://www.nature.com/articles/s44387-026-00141-y.pdf
-    page: https://www.nature.com/articles/s44387-026-00141-y
     code: https://github.com/Dby52-04/SURE
-    doi: 10.1038/s44387-026-00141-y
 
   - title: "From Uncertainty to Action: Learning to Steer LLM Agents"
     authors: <strong>Hanwen Li</strong>, Jinhao Duan, Guanhua Zhu, Junchi Lu, Bo Shen, Chenxi Yuan, Kaidi Xu
