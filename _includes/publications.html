@@ -8,7 +8,8 @@
 {%- if pub.bibtex %}{% capture l %}<a href="{{ pub.bibtex }}">BibTeX</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
 {%- if pub.doi %}{% capture l %}<a href="https://doi.org/{{ pub.doi }}">DOI</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
 <tr><td>
-  <span class="ptitle">{% if pub.pdf %}<a href="{{ pub.pdf }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</span><br>
+  {%- assign tlink = pub.link | default: pub.pdf %}
+  <span class="ptitle">{% if tlink %}<a href="{{ tlink }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</span><br>
   {{ pub.authors }}<br>
   <span class="venue">{{ pub.venue }}</span>{% if pub.notes %} <span class="note">{{ pub.notes }}</span>{% endif %}
   {%- if links.size > 0 %}<br>{{ links | join: " / " }}{% endif %}
